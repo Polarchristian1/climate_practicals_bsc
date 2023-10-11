@@ -6,13 +6,13 @@
 #######################################################################################
 # Book settings
 title: Climate System - Practicals # The title of the book. Will be placed in the left navbar.
-author: Fabien Maussion  # The author of the book
-copyright: "2018-2022"  # Copyright year to be placed in the footer
+author: Fabien Maussion, Lilian Schuster, Patrick Schmitt  # The author of the book
+copyright: "2018-2023"  # Copyright year to be placed in the footer
 logo: img/logo.png  # A path to the book logo
 parse:
   myst_extended_syntax: true
 repository:
-  url: https://github.com/fmaussion/climate_practicals_bsc
+  url: https://github.com/pat-schmitt/climate_practicals_bsc
   path_to_book: book 
   branch: master
 parse:
