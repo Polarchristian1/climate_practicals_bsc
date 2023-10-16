@@ -417,12 +417,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="exercises-planetary-energy-balance">
 <h1>Exercises: planetary energy balance<a class="headerlink" href="#exercises-planetary-energy-balance" title="Permalink to this headline">#</a></h1>
-<p>For these exercises you’ll need some pen and paper and your notes from the class. I also recommend reading one of (or both) of these book chapters (they explain exactly the same thing but in different styles, you can choose yours):</p>
+<p>For these exercises you’ll need some pen and paper and your notes from the class. We also recommend strongly reading one of (or both) of these book chapters (they explain exactly the same thing but in different styles, you can choose yours):</p>
 <ul class="simple">
 <li><p>John Marshall &amp; R. Alan Plumb: Atmosphere, Ocean, and Climate Dynamics (Chapter 2)</p></li>
 <li><p>Andrew Dessler: Introduction to Modern Climate Change (Chapters 3 &amp; 4)</p></li>
 </ul>
-<p>Below I use mostly the notations from Marshall &amp; Plumb, but the differences are small.</p>
+<p>Below we use mostly the notations from Marshall &amp; Plumb, but the differences are small.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># These are the modules you will need</span>
@@ -443,7 +443,8 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>Ex 0</strong>: Compute the solar constant at the location of Earth, given <span class="math notranslate nohighlight">\(Q = 3.87 \times 10^{26} W\)</span> and <span class="math notranslate nohighlight">\(r = 150 \times 10^{9} m\)</span></p>
+<p><strong>Ex 0</strong>: Compute the solar constant (S0_sun) at the location of Earth, given <span class="math notranslate nohighlight">\(Q = 3.87 \times 10^{26} W\)</span> and <span class="math notranslate nohighlight">\(r = 150 \times 10^{9} m\)</span>.
+Find out by how much the solar constant (which is the direct solar irradiance at the top of the atmosphere) fluctuates over a year <a class="reference external" href="https://en.wikipedia.org/wiki/File:Seasons1.svg">due to Earth’s varying distance from the Sun</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here, or on pen &amp; paper</span>
@@ -451,10 +452,10 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>Ex 1</strong>: A planet in another solar system has a solar constant S = 2,000 W/m 2 , and the distance between the planet and the star is 100 million km.</p>
+<p><strong>Ex 1</strong>: A planet in another solar system has a solar constant S = 2500 W/m 2 , and the distance between the planet and the star is 200 million km.</p>
 <ul class="simple">
 <li><p>a) What is the total power output of the star? (Give your answer in watts.)</p></li>
-<li><p>b) What is the solar constant of a planet located 75 million km from the same star? (Give your answer in watts per square meter.)</p></li>
+<li><p>b) What is the solar constant of a planet located 30 million km from the same star? (Give your answer in watts per square meter.)</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -464,6 +465,14 @@ document.write(`
 </div>
 </div>
 <p><strong>Ex 2</strong>: Compute <span class="math notranslate nohighlight">\(T_e\)</span> and <span class="math notranslate nohighlight">\(T_s\)</span> of the Earth using the constants defined and computed above, assuming a one-layer planet opaque to longwave radiation but transparent to shortwave radiation.</p>
+<ul class="simple">
+<li><p>Try to understand each step of the derivation of <span class="math notranslate nohighlight">\(T_e\)</span> and <span class="math notranslate nohighlight">\(T_s\)</span> (see e.g. Ch. 2.1 and Ch. 2.3.1 of the Marshall <span class="math notranslate nohighlight">\(\&amp;\)</span> Plumb book) and write the steps down in such a way that you can present the derivation to your fellow students.</p>
+<ul>
+<li><p>This will also help you to find the derivation for Ex. 5 and to remember the concept.</p></li>
+</ul>
+</li>
+<li><p>If you do not understand a step, write it down and we will discuss it during our next meeting.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here, or on pen &amp; paper</span>
@@ -471,7 +480,11 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>Ex 3</strong>: Using the “leaky” atmosphere model, determine <span class="math notranslate nohighlight">\(\epsilon\)</span> so that <span class="math notranslate nohighlight">\(T_S\)</span> is equal to the observed surface temperature on Earth, about 15°C.</p>
+<p><strong>Ex 3</strong>: Using the “leaky” atmosphere model, determine <span class="math notranslate nohighlight">\(\epsilon\)</span> so that <span class="math notranslate nohighlight">\(T_s\)</span> is equal to the observed surface temperature on Earth, about 15°C.</p>
+<ul class="simple">
+<li><p>What is different in this new assumption? Try again to understand each step of the derivation to find a relation between <span class="math notranslate nohighlight">\(T_s\)</span> and <span class="math notranslate nohighlight">\(T_e\)</span> (see e.g. Ch. 2.3.2 of the Marshall&amp;Plumb book) and write the steps down in such a way that you can present the derivation to your fellow students.</p></li>
+<li><p>What is the theoretical minimum / maximum value of <span class="math notranslate nohighlight">\(\epsilon\)</span> and what does that mean for the relation between atmospheric and ground temperatures in the “leaky” model ?</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here, or on pen &amp; paper</span>
@@ -479,7 +492,8 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>Ex 4</strong>: As we will discover later, one way to address global warming is to increase the reflectivity of the planet. To reduce the Earth’s temperature by 1 K, how much would we have to change the Earth albedo? (assume a one-layer planet with an initial albedo of 0.3 and solar constant of 1367 W/m 2 ).</p>
+<p><strong>Ex 4</strong>: As we will discover later, one way to address global warming is to increase the reflectivity of the planet. To reduce the Earth’s temperature by 1 K, how much would we have to change the Earth albedo? (assume a one-layer planet opaque to longwave radiation but transparent to shortwave radiation with an initial albedo of 0.3 and solar constant of 1367 W/m 2 ).</p>
+<p><em><strong>Hint</strong></em>: Here you can again assume an epsilon of 1 (you can solve ex. 4 independent of ex. 3)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here, or on pen &amp; paper</span>
@@ -487,10 +501,22 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>Ex 5</strong>: Either on your own of with the help of one of the books (Exercise 5 in Marshall &amp; Plumb, or Textbook in Dessler), determine that when a very opaque atmosphere as N layers opaque to longwave radiation, the equilibrium surface temperature is:</p>
+<p><strong>Ex 5</strong>: Either on your own or with the help of one of the books (Exercise 5 in Marshall &amp; Plumb, or Textbook in Dessler), determine that when a very opaque atmosphere as N layers opaque to longwave radiation, the equilibrium surface temperature is:</p>
 <div class="math notranslate nohighlight">
 \[T_s = (N + 1)^{1/4} T_e\]</div>
-<p>Now plot the surface temperature of earth as a function of the number of opaque layers in the atmosphere, with N in [1, 100].</p>
+<p><em><strong>Hints</strong></em>:</p>
+<ul class="simple">
+<li><p>Try to understand / derive on your own first the equation for the one-layer planet (see Ex. 2)</p></li>
+<li><p>Then derive the equation for a two-layer planet and check the hints in Ex. 5 Marshall &amp; Plumb (p. 21) to actually derive the equation above …</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here (best to do that with pen &amp; paper)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now plot the surface temperature of Earth as a function of the number of opaque layers in the atmosphere, with N in [1, 100].</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># your answer here</span>
