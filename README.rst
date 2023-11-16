@@ -8,6 +8,7 @@ The Climate System - practicals
 Practicals of the BSc Climate System class at the University of Innsbruck.
 
 Website: https://pat-schmitt.github.io/climate_practicals_bsc/
+
 License
 -------
 
