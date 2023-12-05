@@ -17,10 +17,10 @@ parts:
     - file: week_02/02_Assignment_CERES_data
 
   - caption: Week 03
-    chapter:
+    chapters:
     - file: week_03/01_Lesson_MoreDataCrunching
 
   - caption: Projects
-    chapter:
+    chapters:
     - file: projects/projects
 
