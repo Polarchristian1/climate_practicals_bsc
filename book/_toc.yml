@@ -5,6 +5,7 @@ parts:
     chapters:
     - file: getting_started
     - file: primer
+    - file: download
 
   - caption: Week 01
     chapters:
@@ -14,4 +15,12 @@ parts:
     chapters:
     - file: week_02/01_Lesson_NetCDF_Data
     - file: week_02/02_Assignment_CERES_data
+
+  - caption: Week 03
+    chapters:
+    - file: week_03/01_Lesson_MoreDataCrunching
+
+  - caption: Projects
+    chapters:
+    - file: projects/projects
 
