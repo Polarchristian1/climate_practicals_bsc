@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Python and Jupyter: a primer &#8212; Climate System - Practicals</title>
   
@@ -15,46 +14,46 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-88391345-1"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -62,21 +61,25 @@
                 gtag('js', new Date());
                 gtag('config', 'UA-88391345-1');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-88391345-1');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'primer';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Downloading the data" href="download.html" />
+    <link rel="next" title="Exercises: planetary energy balance" href="week_01/01_Assignment_Planetary_Energy_Balance.html" />
     <link rel="prev" title="Getting started with Jupyter Notebooks" href="getting_started.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -84,19 +87,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -118,12 +125,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -138,9 +153,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="welcome.html">
+  
   
   
   
@@ -150,12 +169,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Climate System - Practicals - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Climate System - Practicals - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -169,24 +199,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started with Jupyter Notebooks</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Python and Jupyter: a primer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="download.html">Downloading the data</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 01</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="week_01/01_Assignment_Planetary_Energy_Balance.html">Exercises: planetary energy balance</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 02</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="week_02/01_Lesson_NetCDF_Data.html">Lesson: working with netCDF data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="week_02/02_Assignment_CERES_data.html">Assignment: CERES data</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Week 03</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="week_03/01_Lesson_MoreDataCrunching.html">Lesson: more tools for statistical and climatological analysis</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="projects/projects.html">Group project: the Climate System</a></li>
 </ul>
 
     </div>
@@ -202,7 +218,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -211,14 +227,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -243,14 +259,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/pat-schmitt/climate_practicals_bsc/master?urlpath=lab/tree/book/primer.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -388,26 +404,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -458,10 +476,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="python-and-jupyter-a-primer">
-<h1>Python and Jupyter: a primer<a class="headerlink" href="#python-and-jupyter-a-primer" title="Permalink to this headline">#</a></h1>
+<h1>Python and Jupyter: a primer<a class="headerlink" href="#python-and-jupyter-a-primer" title="Link to this heading">#</a></h1>
 <p>Download and open this notebook on your laptop, or open it with MyBinder. Feel free to mess around with it, there is always a fresh copy for you to download!</p>
 <p>If you haven’t followed Fabien Maussion’s programming class, you might find these introduction videos useful:</p>
 <ul class="simple">
@@ -469,7 +487,7 @@ document.write(`
 <li><p><a class="reference external" href="https://fabienmaussion.info/intro_to_programming/week_03/01-Intro-notebooks.html">Introduction to Notebooks</a></p></li>
 </ul>
 <section id="first-steps">
-<h2>First steps<a class="headerlink" href="#first-steps" title="Permalink to this headline">#</a></h2>
+<h2>First steps<a class="headerlink" href="#first-steps" title="Link to this heading">#</a></h2>
 <p>At first sight the notebook looks like a text editor. Below the toolbar you can see a <strong>cell</strong>. The default purpose of a cell is to write code:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -525,7 +543,7 @@ document.write(`
 <p>Note that we ommited the <code class="docutils literal notranslate"><span class="pre">print</span></code> commmand above (this is OK if you want to print something at the end of the cell only).</p>
 </section>
 <section id="code-cells">
-<h2>Code Cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">#</a></h2>
+<h2>Code Cells<a class="headerlink" href="#code-cells" title="Link to this heading">#</a></h2>
 <p>In code cells, you can write and execute code. The output will appear underneath the cell, once you execute it.</p>
 <p>You can execute your code, as already mentioned before, with the keyboard shortcut <code class="docutils literal notranslate"><span class="pre">[Shift+Enter]</span></code> or press the <code class="docutils literal notranslate"><span class="pre">Run</span></code> button in the toolbar. Afterwards, the next cell underneath will be selected automatically.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">Cell</span></code> menu (classic) or <code class="docutils literal notranslate"><span class="pre">Run</span></code> menu (lab) has a number of menu items for running code in different ways. These include:</p>
@@ -541,8 +559,8 @@ That’s what you get by pressing <code class="docutils literal notranslate"><sp
 <p>Typically, you will work on a computational problem in pieces, organizing related ideas into cells and moving forward once previous parts work correctly. This is much more convenient for interactive exploration than breaking up a computation into scripts that must be executed together, as was previously necessary, especially if parts of them take a long time to run.</p>
 </section>
 <section id="basic-python-syntax">
-<h2>Basic Python syntax<a class="headerlink" href="#basic-python-syntax" title="Permalink to this headline">#</a></h2>
-<p>We are now going to go through some python basics. If you follow the programming lecture with me, you can jump directly to <span class="xref myst">Plotting</span> (although some revision is always good as well!).</p>
+<h2>Basic Python syntax<a class="headerlink" href="#basic-python-syntax" title="Link to this heading">#</a></h2>
+<p>We are now going to go through some python basics. If you follow the programming lecture with me, you can jump directly to <a class="reference internal" href="#plotting"><span class="xref myst">Plotting</span></a> (although some revision is always good as well!).</p>
 <p>In python, the <strong>case</strong> is important:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -632,7 +650,7 @@ Now I&#39;m there
 </div>
 </section>
 <section id="the-import-mechanism-in-python">
-<h2>The “import” mechanism in Python<a class="headerlink" href="#the-import-mechanism-in-python" title="Permalink to this headline">#</a></h2>
+<h2>The “import” mechanism in Python<a class="headerlink" href="#the-import-mechanism-in-python" title="Link to this heading">#</a></h2>
 <p>Some python functions like <code class="docutils literal notranslate"><span class="pre">print()</span></code> are always available per default: they are called <strong>built-in functions</strong>. <code class="docutils literal notranslate"><span class="pre">sorted()</span></code> is another example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -694,7 +712,7 @@ Now I&#39;m there
 </div>
 </section>
 <section id="variables-and-arrays">
-<h2>Variables and arrays<a class="headerlink" href="#variables-and-arrays" title="Permalink to this headline">#</a></h2>
+<h2>Variables and arrays<a class="headerlink" href="#variables-and-arrays" title="Link to this heading">#</a></h2>
 <p>A <strong>variable</strong> in Python is very similar to a variable in Matlab or in other languages. A variable can be initialised, used and re-initialised:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -715,7 +733,7 @@ Hi!
 </div>
 <p>There are several variable types in Python. We are going to need only very few of them:</p>
 <section id="numbers-integers-and-floats">
-<h3>Numbers: integers and floats<a class="headerlink" href="#numbers-integers-and-floats" title="Permalink to this headline">#</a></h3>
+<h3>Numbers: integers and floats<a class="headerlink" href="#numbers-integers-and-floats" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">12</span>
@@ -732,7 +750,7 @@ Hi!
 </div>
 </section>
 <section id="strings">
-<h3>Strings:<a class="headerlink" href="#strings" title="Permalink to this headline">#</a></h3>
+<h3>Strings:<a class="headerlink" href="#strings" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This is a string.&#39;</span>
@@ -808,7 +826,7 @@ Hi!
 </div>
 </section>
 <section id="lists">
-<h3>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">#</a></h3>
+<h3>Lists<a class="headerlink" href="#lists" title="Link to this heading">#</a></h3>
 <p>A list is simply a sequence of things:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -850,7 +868,7 @@ Blue
 <p>For Matlab-like arrays we will need Numpy:</p>
 </section>
 <section id="arrays">
-<h3>Arrays<a class="headerlink" href="#arrays" title="Permalink to this headline">#</a></h3>
+<h3>Arrays<a class="headerlink" href="#arrays" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
@@ -897,7 +915,7 @@ Blue
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>np.int64(3)
 </pre></div>
 </div>
 </div>
@@ -929,7 +947,7 @@ Blue
 </div>
 </section>
 <section id="multidimensional-arrays">
-<h3>Multidimensional arrays<a class="headerlink" href="#multidimensional-arrays" title="Permalink to this headline">#</a></h3>
+<h3>Multidimensional arrays<a class="headerlink" href="#multidimensional-arrays" title="Link to this heading">#</a></h3>
 <p>In science, most of the data is multidimensional. Numpy (like Matlab) has been designed for such data arrays:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -989,7 +1007,7 @@ Blue
 </section>
 </section>
 <section id="python-objects">
-<h2>Python objects<a class="headerlink" href="#python-objects" title="Permalink to this headline">#</a></h2>
+<h2>Python objects<a class="headerlink" href="#python-objects" title="Link to this heading">#</a></h2>
 <p>In python, all variables are also “things”. In the programming jargon, these “things” are called <em>objects</em>. Without going into details that you won’t need for this lecture, objects have so-called “attributes” and “methods” (what you may know under the name “functions”). Attributes are information stored about the object.</p>
 <p>For example, even simple integers are also “things with attributes”:</p>
 <div class="cell docutils container">
@@ -1056,7 +1074,7 @@ The imaginary part of a is 0
 <p>As you will see, we are going to use various attributes and methods available on <a class="reference external" href="http://xarray.pydata.org">xarray</a> objects starting from Week 02.</p>
 </section>
 <section id="getting-help-about-python-variables-and-functions">
-<h2>Getting help about python variables and functions<a class="headerlink" href="#getting-help-about-python-variables-and-functions" title="Permalink to this headline">#</a></h2>
+<h2>Getting help about python variables and functions<a class="headerlink" href="#getting-help-about-python-variables-and-functions" title="Link to this heading">#</a></h2>
 <p>The standard way to get information about python things is to use the built-in function help(). We are not a big fan of it because its output is quite long, but at least it’s complete:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1071,11 +1089,11 @@ The imaginary part of a is 0
 class int(object)
  |  int([x]) -&gt; integer
  |  int(x, base=10) -&gt; integer
- |  
+ |
  |  Convert a number or string to an integer, or return 0 if no arguments
- |  are given.  If x is a number, return x.__int__().  For floating point
+ |  are given.  If x is a number, return x.__int__().  For floating-point
  |  numbers, this truncates towards zero.
- |  
+ |
  |  If x is not a number or if base is given, then x must be a string,
  |  bytes, or bytearray instance representing an integer literal in the
  |  given base.  The literal can be preceded by &#39;+&#39; or &#39;-&#39; and be surrounded
@@ -1083,220 +1101,223 @@ class int(object)
  |  Base 0 means to interpret the base from the string as an integer literal.
  |  &gt;&gt;&gt; int(&#39;0b100&#39;, base=0)
  |  4
- |  
+ |
  |  Built-in subclasses:
  |      bool
- |  
+ |
  |  Methods defined here:
- |  
+ |
  |  __abs__(self, /)
  |      abs(self)
- |  
+ |
  |  __add__(self, value, /)
  |      Return self+value.
- |  
+ |
  |  __and__(self, value, /)
  |      Return self&amp;value.
- |  
+ |
  |  __bool__(self, /)
  |      True if self else False
- |  
+ |
  |  __ceil__(...)
  |      Ceiling of an Integral returns itself.
- |  
+ |
  |  __divmod__(self, value, /)
  |      Return divmod(self, value).
- |  
+ |
  |  __eq__(self, value, /)
  |      Return self==value.
- |  
+ |
  |  __float__(self, /)
  |      float(self)
- |  
+ |
  |  __floor__(...)
  |      Flooring an Integral returns itself.
- |  
+ |
  |  __floordiv__(self, value, /)
  |      Return self//value.
- |  
+ |
  |  __format__(self, format_spec, /)
- |      Default object formatter.
- |  
+ |      Convert to a string according to format_spec.
+ |
  |  __ge__(self, value, /)
  |      Return self&gt;=value.
- |  
+ |
  |  __getattribute__(self, name, /)
  |      Return getattr(self, name).
- |  
+ |
  |  __getnewargs__(self, /)
- |  
+ |
  |  __gt__(self, value, /)
  |      Return self&gt;value.
- |  
+ |
  |  __hash__(self, /)
  |      Return hash(self).
- |  
+ |
  |  __index__(self, /)
  |      Return self converted to an integer, if self is suitable for use as an index into a list.
- |  
+ |
  |  __int__(self, /)
  |      int(self)
- |  
+ |
  |  __invert__(self, /)
  |      ~self
- |  
+ |
  |  __le__(self, value, /)
  |      Return self&lt;=value.
- |  
+ |
  |  __lshift__(self, value, /)
  |      Return self&lt;&lt;value.
- |  
+ |
  |  __lt__(self, value, /)
  |      Return self&lt;value.
- |  
+ |
  |  __mod__(self, value, /)
  |      Return self%value.
- |  
+ |
  |  __mul__(self, value, /)
  |      Return self*value.
- |  
+ |
  |  __ne__(self, value, /)
  |      Return self!=value.
- |  
+ |
  |  __neg__(self, /)
  |      -self
- |  
+ |
  |  __or__(self, value, /)
  |      Return self|value.
- |  
+ |
  |  __pos__(self, /)
  |      +self
- |  
+ |
  |  __pow__(self, value, mod=None, /)
  |      Return pow(self, value, mod).
- |  
+ |
  |  __radd__(self, value, /)
  |      Return value+self.
- |  
+ |
  |  __rand__(self, value, /)
  |      Return value&amp;self.
- |  
+ |
  |  __rdivmod__(self, value, /)
  |      Return divmod(value, self).
- |  
+ |
  |  __repr__(self, /)
  |      Return repr(self).
- |  
+ |
  |  __rfloordiv__(self, value, /)
  |      Return value//self.
- |  
+ |
  |  __rlshift__(self, value, /)
  |      Return value&lt;&lt;self.
- |  
+ |
  |  __rmod__(self, value, /)
  |      Return value%self.
- |  
+ |
  |  __rmul__(self, value, /)
  |      Return value*self.
- |  
+ |
  |  __ror__(self, value, /)
  |      Return value|self.
- |  
+ |
  |  __round__(...)
  |      Rounding an Integral returns itself.
- |      
+ |
  |      Rounding with an ndigits argument also returns an integer.
- |  
+ |
  |  __rpow__(self, value, mod=None, /)
  |      Return pow(value, self, mod).
- |  
+ |
  |  __rrshift__(self, value, /)
  |      Return value&gt;&gt;self.
- |  
+ |
  |  __rshift__(self, value, /)
  |      Return self&gt;&gt;value.
- |  
+ |
  |  __rsub__(self, value, /)
  |      Return value-self.
- |  
+ |
  |  __rtruediv__(self, value, /)
  |      Return value/self.
- |  
+ |
  |  __rxor__(self, value, /)
  |      Return value^self.
- |  
+ |
  |  __sizeof__(self, /)
  |      Returns size in memory, in bytes.
- |  
+ |
  |  __sub__(self, value, /)
  |      Return self-value.
- |  
+ |
  |  __truediv__(self, value, /)
  |      Return self/value.
- |  
+ |
  |  __trunc__(...)
  |      Truncating an Integral returns itself.
- |  
+ |
  |  __xor__(self, value, /)
  |      Return self^value.
- |  
+ |
  |  as_integer_ratio(self, /)
- |      Return integer ratio.
- |      
- |      Return a pair of integers, whose ratio is exactly equal to the original int
- |      and with a positive denominator.
- |      
+ |      Return a pair of integers, whose ratio is equal to the original int.
+ |
+ |      The ratio is in lowest terms and has a positive denominator.
+ |
  |      &gt;&gt;&gt; (10).as_integer_ratio()
  |      (10, 1)
  |      &gt;&gt;&gt; (-10).as_integer_ratio()
  |      (-10, 1)
  |      &gt;&gt;&gt; (0).as_integer_ratio()
  |      (0, 1)
- |  
+ |
  |  bit_count(self, /)
  |      Number of ones in the binary representation of the absolute value of self.
- |      
+ |
  |      Also known as the population count.
- |      
+ |
  |      &gt;&gt;&gt; bin(13)
  |      &#39;0b1101&#39;
  |      &gt;&gt;&gt; (13).bit_count()
  |      3
- |  
+ |
  |  bit_length(self, /)
  |      Number of bits necessary to represent self in binary.
- |      
+ |
  |      &gt;&gt;&gt; bin(37)
  |      &#39;0b100101&#39;
  |      &gt;&gt;&gt; (37).bit_length()
  |      6
- |  
+ |
  |  conjugate(...)
  |      Returns self, the complex conjugate of any int.
- |  
- |  to_bytes(self, /, length, byteorder, *, signed=False)
+ |
+ |  is_integer(self, /)
+ |      Returns True. Exists for duck type compatibility with float.is_integer.
+ |
+ |  to_bytes(self, /, length=1, byteorder=&#39;big&#39;, *, signed=False)
  |      Return an array of bytes representing an integer.
- |      
+ |
  |      length
  |        Length of bytes object to use.  An OverflowError is raised if the
- |        integer is not representable with the given number of bytes.
+ |        integer is not representable with the given number of bytes.  Default
+ |        is length 1.
  |      byteorder
  |        The byte order used to represent the integer.  If byteorder is &#39;big&#39;,
  |        the most significant byte is at the beginning of the byte array.  If
  |        byteorder is &#39;little&#39;, the most significant byte is at the end of the
  |        byte array.  To request the native byte order of the host system, use
- |        `sys.byteorder&#39; as the byte order value.
+ |        `sys.byteorder&#39; as the byte order value.  Default is to use &#39;big&#39;.
  |      signed
  |        Determines whether two&#39;s complement is used to represent the integer.
  |        If signed is False and a negative integer is given, an OverflowError
  |        is raised.
- |  
+ |
  |  ----------------------------------------------------------------------
  |  Class methods defined here:
- |  
- |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+ |
+ |  from_bytes(bytes, byteorder=&#39;big&#39;, *, signed=False)
  |      Return the integer represented by the given array of bytes.
- |      
+ |
  |      bytes
  |        Holds the array of bytes to convert.  The argument must either
  |        support the buffer protocol or be an iterable object producing bytes.
@@ -1307,28 +1328,28 @@ class int(object)
  |        the most significant byte is at the beginning of the byte array.  If
  |        byteorder is &#39;little&#39;, the most significant byte is at the end of the
  |        byte array.  To request the native byte order of the host system, use
- |        `sys.byteorder&#39; as the byte order value.
+ |        `sys.byteorder&#39; as the byte order value.  Default is to use &#39;big&#39;.
  |      signed
  |        Indicates whether two&#39;s complement is used to represent the integer.
- |  
+ |
  |  ----------------------------------------------------------------------
  |  Static methods defined here:
- |  
- |  __new__(*args, **kwargs) from builtins.type
+ |
+ |  __new__(*args, **kwargs)
  |      Create and return a new object.  See help(type) for accurate signature.
- |  
+ |
  |  ----------------------------------------------------------------------
  |  Data descriptors defined here:
- |  
+ |
  |  denominator
  |      the denominator of a rational number in lowest terms
- |  
+ |
  |  imag
  |      the imaginary part of a complex number
- |  
+ |
  |  numerator
  |      the numerator of a rational number in lowest terms
- |  
+ |
  |  real
  |      the real part of a complex number
 </pre></div>
@@ -1360,7 +1381,7 @@ class int(object)
 <p>It’s always useful to have their documentation webpage open on your browser for easy reference.</p>
 </section>
 <section id="plotting">
-<h2>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">#</a></h2>
+<h2>Plotting<a class="headerlink" href="#plotting" title="Link to this heading">#</a></h2>
 <p><a id='plotting'></a></p>
 <p>The most widely used plotting tool for Python is <a class="reference external" href="http://matplotlib.org/">Matplotlib</a>. Its syntax is directly inspired from Matlab so you should be able to recognise some commands if you used Matlab before. First, import it:</p>
 <div class="cell docutils container">
@@ -1383,7 +1404,7 @@ class int(object)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/b1c2996441844e1d2710c6036bcd9224995977e05d144cb2e3efe7c509d72c60.png" src="_images/b1c2996441844e1d2710c6036bcd9224995977e05d144cb2e3efe7c509d72c60.png" />
+<img alt="_images/48119b0e68a785c4736c6f3d062ae8731aa0940f9439019725b484e08ef89e4b.png" src="_images/48119b0e68a785c4736c6f3d062ae8731aa0940f9439019725b484e08ef89e4b.png" />
 </div>
 </div>
 <p>It is possible to save the figure to a file by adding for example <code class="docutils literal notranslate"><span class="pre">plt.savefig('test.png')</span></code> <em>at the end of the cell</em>. This will create an image file in the same directory as the notebook.</p>
@@ -1400,16 +1421,16 @@ class int(object)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/2c4b0338d954122972450c7e51fbf1060aed1e1f0976a65be85b647a11cf42d3.png" src="_images/2c4b0338d954122972450c7e51fbf1060aed1e1f0976a65be85b647a11cf42d3.png" />
+<img alt="_images/d7d3626094b91f96b4d22ff361acadce4d0858bf54882fac321f0d4b130727b2.png" src="_images/d7d3626094b91f96b4d22ff361acadce4d0858bf54882fac321f0d4b130727b2.png" />
 </div>
 </div>
 </section>
 <section id="formatting-your-notebook-with-text-titles-and-formulas">
-<h2>Formatting your notebook with text, titles and formulas.<a class="headerlink" href="#formatting-your-notebook-with-text-titles-and-formulas" title="Permalink to this headline">#</a></h2>
+<h2>Formatting your notebook with text, titles and formulas.<a class="headerlink" href="#formatting-your-notebook-with-text-titles-and-formulas" title="Link to this heading">#</a></h2>
 <p>The default role of a cell is to run code, but you can tell the notebook to format a cell as “text” by clicking on “Cell <span class="math notranslate nohighlight">\(\rightarrow\)</span> Cell Type <span class="math notranslate nohighlight">\(\rightarrow\)</span> Markdown”. The current cell will now be transformed to a normal text. Try it out in your testing notebook.</p>
 <p>Again, there is a shortcut for this: press <code class="docutils literal notranslate"><span class="pre">[ctrl+m]</span></code> to enter in command mode and then press <code class="docutils literal notranslate"><span class="pre">[m]</span></code> for “markdown”.</p>
 <section id="a-text-cell-can-also-be-a-title-if-you-add-one-or-more-at-the-begining">
-<h3>A text cell can also be a title if you add one or more # at the begining<a class="headerlink" href="#a-text-cell-can-also-be-a-title-if-you-add-one-or-more-at-the-begining" title="Permalink to this headline">#</a></h3>
+<h3>A text cell can also be a title if you add one or more # at the begining<a class="headerlink" href="#a-text-cell-can-also-be-a-title-if-you-add-one-or-more-at-the-begining" title="Link to this heading">#</a></h3>
 <p>A text cell can be formatted using the <a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> format.
 No need to learn too many details about it right now but remember that it is possible to write lists:</p>
 <ul class="simple">
@@ -1440,7 +1461,7 @@ The markdown &quot;`code`&quot; of this cell is:
 <p><em>Source: <a class="reference external" href="http://edu.oggm.org">http://edu.oggm.org</a></em></p>
 </section>
 <section id="useful-notebook-shortcuts">
-<h3>Useful notebook shortcuts<a class="headerlink" href="#useful-notebook-shortcuts" title="Permalink to this headline">#</a></h3>
+<h3>Useful notebook shortcuts<a class="headerlink" href="#useful-notebook-shortcuts" title="Link to this heading">#</a></h3>
 <p>Keyboard shortcuts will make your life much easier when using notebooks. To be able to use those shortcuts, you will first need to get into the so called <strong>command mode</strong> by pressing <code class="docutils literal notranslate"><span class="pre">esc</span></code>. You will also enter this mode, if you single click on a cell. The color of the cells left margin will turn from green (edit mode) to blue.
 Now you can</p>
 <ul class="simple">
@@ -1458,10 +1479,10 @@ Now you can</p>
 </section>
 </section>
 <section id="what-s-next">
-<h2>What’s next?<a class="headerlink" href="#what-s-next" title="Permalink to this headline">#</a></h2>
+<h2>What’s next?<a class="headerlink" href="#what-s-next" title="Link to this heading">#</a></h2>
 <p>We have learned about the very basics of the python language and the jupyter notebook, and this will be enough for today’s excercises. You can learn more about the notebook by clicking on the “Help” menu above.</p>
 <p>There is an excellent Python tutorial provided by the Software Carpentry: <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation">http://swcarpentry.github.io/python-novice-inflammation</a>. I strongly recommend it.</p>
-<p>If you are ready to go further, let’s go to this <a class="reference internal" href="week_01/01_Assignment_Planetary_Energy_Balance.html"><span class="doc std std-doc">week’s exercises</span></a>!</p>
+<p>If you are ready to go further, let’s go to this <a class="reference internal" href="week_01/01_Assignment_Planetary_Energy_Balance.html"><span class="std std-doc">week’s exercises</span></a>!</p>
 </section>
 </section>
 
@@ -1490,8 +1511,10 @@ Now you can</p>
 
               
               
-                <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="getting_started.html"
@@ -1503,11 +1526,11 @@ Now you can</p>
       </div>
     </a>
     <a class="right-next"
-       href="download.html"
+       href="week_01/01_Assignment_Planetary_Energy_Balance.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Downloading the data</p>
+        <p class="prev-next-title">Exercises: planetary energy balance</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1519,6 +1542,7 @@ Now you can</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1555,7 +1579,7 @@ Now you can</p>
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -1568,6 +1592,7 @@ By Fabien Maussion, Lilian Schuster, Patrick Schmitt
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -1589,7 +1614,7 @@ These lecture notes and exercises are licensed under a <a href="https://creative
 </div>
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -1598,8 +1623,8 @@ These lecture notes and exercises are licensed under a <a href="https://creative
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
