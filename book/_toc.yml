@@ -5,6 +5,7 @@ parts:
     chapters:
     - file: getting_started
     - file: primer
+    - file: download
 
   - caption: Week 01
     chapters:
