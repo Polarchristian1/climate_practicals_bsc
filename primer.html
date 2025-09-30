@@ -28,11 +28,11 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
@@ -643,7 +643,7 @@ Now I&#39;m there
 <p>If you feel like it, you can even make your own functions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="c1"># Be carefull: the indentation!!!</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
@@ -683,7 +683,7 @@ Now I&#39;m there
 <p>Python has a particular mechanism to give access to other functions. This is the <strong>import</strong> mechanism and is one of the greatest strengths of the Python language (just believe us on this one for now).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span>
 </pre></div>
 </div>
 </div>
@@ -706,7 +706,7 @@ Now I&#39;m there
 <p>Because writing “<code class="docutils literal notranslate"><span class="pre">numpy.function()</span></code>” can be time consuming (especially if one uses numpy often), there is the possibility to give an <strong>alias</strong> to the imported module. The convention for numpy is following:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -1134,7 +1134,7 @@ class int(object)
  |  __bool__(self, /)
  |      True if self else False
  |
- |  __ceil__(...)
+ |  __ceil__(self, /)
  |      Ceiling of an Integral returns itself.
  |
  |  __divmod__(self, value, /)
@@ -1146,7 +1146,7 @@ class int(object)
  |  __float__(self, /)
  |      float(self)
  |
- |  __floor__(...)
+ |  __floor__(self, /)
  |      Flooring an Integral returns itself.
  |
  |  __floordiv__(self, value, /)
@@ -1235,7 +1235,7 @@ class int(object)
  |  __ror__(self, value, /)
  |      Return value|self.
  |
- |  __round__(...)
+ |  __round__(self, ndigits=&lt;unrepresentable&gt;, /)
  |      Rounding an Integral returns itself.
  |
  |      Rounding with an ndigits argument also returns an integer.
@@ -1267,7 +1267,7 @@ class int(object)
  |  __truediv__(self, value, /)
  |      Return self/value.
  |
- |  __trunc__(...)
+ |  __trunc__(self, /)
  |      Truncating an Integral returns itself.
  |
  |  __xor__(self, value, /)
@@ -1303,7 +1303,7 @@ class int(object)
  |      &gt;&gt;&gt; (37).bit_length()
  |      6
  |
- |  conjugate(...)
+ |  conjugate(self, /)
  |      Returns self, the complex conjugate of any int.
  |
  |  is_integer(self, /)
@@ -1321,7 +1321,7 @@ class int(object)
  |        the most significant byte is at the beginning of the byte array.  If
  |        byteorder is &#39;little&#39;, the most significant byte is at the end of the
  |        byte array.  To request the native byte order of the host system, use
- |        `sys.byteorder&#39; as the byte order value.  Default is to use &#39;big&#39;.
+ |        sys.byteorder as the byte order value.  Default is to use &#39;big&#39;.
  |      signed
  |        Determines whether two&#39;s complement is used to represent the integer.
  |        If signed is False and a negative integer is given, an OverflowError
@@ -1343,7 +1343,7 @@ class int(object)
  |        the most significant byte is at the beginning of the byte array.  If
  |        byteorder is &#39;little&#39;, the most significant byte is at the end of the
  |        byte array.  To request the native byte order of the host system, use
- |        `sys.byteorder&#39; as the byte order value.  Default is to use &#39;big&#39;.
+ |        sys.byteorder as the byte order value.  Default is to use &#39;big&#39;.
  |      signed
  |        Indicates whether two&#39;s complement is used to represent the integer.
  |
@@ -1401,7 +1401,38 @@ class int(object)
 <p>The most widely used plotting tool for Python is <a class="reference external" href="http://matplotlib.org/">Matplotlib</a>. Its syntax is directly inspired from Matlab so you should be able to recognise some commands if you used Matlab before. First, import it:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">43</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">climate</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.13</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">matplotlib</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">161</span>
+<span class="g g-Whitespace">    </span><span class="mi">157</span> <span class="kn">from</span><span class="w"> </span><span class="nn">packaging.version</span><span class="w"> </span><span class="kn">import</span> <span class="n">parse</span> <span class="k">as</span> <span class="n">parse_version</span>
+<span class="g g-Whitespace">    </span><span class="mi">159</span> <span class="c1"># cbook must import matplotlib only within function</span>
+<span class="g g-Whitespace">    </span><span class="mi">160</span> <span class="c1"># definitions, so it is safe to import from it here.</span>
+<span class="ne">--&gt; </span><span class="mi">161</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_api</span><span class="p">,</span> <span class="n">_version</span><span class="p">,</span> <span class="n">cbook</span><span class="p">,</span> <span class="n">_docstring</span><span class="p">,</span> <span class="n">rcsetup</span>
+<span class="g g-Whitespace">    </span><span class="mi">162</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib._api</span><span class="w"> </span><span class="kn">import</span> <span class="n">MatplotlibDeprecationWarning</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.rcsetup</span><span class="w"> </span><span class="kn">import</span> <span class="n">cycler</span>  <span class="c1"># noqa: F401</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">climate</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.13</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">matplotlib</span><span class="o">/</span><span class="n">rcsetup</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">33</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib._enums</span><span class="w"> </span><span class="kn">import</span> <span class="n">JoinStyle</span><span class="p">,</span> <span class="n">CapStyle</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span> <span class="c1"># Don&#39;t let the original cycler collide with our validating cycler</span>
+<span class="ne">---&gt; </span><span class="mi">33</span> <span class="kn">from</span><span class="w"> </span><span class="nn">cycler</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cycler</span><span class="p">,</span> <span class="n">cycler</span> <span class="k">as</span> <span class="n">ccycler</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span> <span class="nd">@_api</span><span class="o">.</span><span class="n">caching_module_getattr</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="k">class</span><span class="w"> </span><span class="nc">__getattr__</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span>     <span class="nd">@_api</span><span class="o">.</span><span class="n">deprecated</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span>         <span class="s2">&quot;3.9&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span>         <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;``matplotlib.backends.backend_registry.list_builtin&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span>             <span class="s2">&quot;(matplotlib.backends.BackendFilter.INTERACTIVE)``&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span>     <span class="nd">@property</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span>     <span class="k">def</span><span class="w"> </span><span class="nf">interactive_bk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;cycler&#39;
 </pre></div>
 </div>
 </div>
@@ -1419,7 +1450,17 @@ class int(object)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/48119b0e68a785c4736c6f3d062ae8731aa0940f9439019725b484e08ef89e4b.png" src="_images/48119b0e68a785c4736c6f3d062ae8731aa0940f9439019725b484e08ef89e4b.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">44</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(x)&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
 </div>
 </div>
 <p>It is possible to save the figure to a file by adding for example <code class="docutils literal notranslate"><span class="pre">plt.savefig('test.png')</span></code> <em>at the end of the cell</em>. This will create an image file in the same directory as the notebook.</p>
@@ -1436,7 +1477,17 @@ class int(object)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/d7d3626094b91f96b4d22ff361acadce4d0858bf54882fac321f0d4b130727b2.png" src="_images/d7d3626094b91f96b4d22ff361acadce4d0858bf54882fac321f0d4b130727b2.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">45</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;f(x) = x&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;f(x) = x$^</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;plt&#39; is not defined
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -1472,7 +1523,8 @@ The markdown &quot;`code`&quot; of this cell is:
 </pre></div>
 </div>
 <p>You can also link to images online (this needs internet to display!) or locally with a path:</p>
-<a class="reference internal image-reference" href="https://edu.oggm.org/en/latest/_images/oggm.gif"><img alt="https://edu.oggm.org/en/latest/_images/oggm.gif" class="align-center" src="https://edu.oggm.org/en/latest/_images/oggm.gif" style="width: 40%;" /></a>
+<a class="reference internal image-reference" href="https://edu.oggm.org/en/latest/_images/oggm.gif"><img alt="https://edu.oggm.org/en/latest/_images/oggm.gif" class="align-center" src="https://edu.oggm.org/en/latest/_images/oggm.gif" style="width: 40%;" />
+</a>
 <p><em>Source: <a class="reference external" href="http://edu.oggm.org">http://edu.oggm.org</a></em></p>
 </section>
 <section id="useful-notebook-shortcuts">

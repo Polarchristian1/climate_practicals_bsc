@@ -28,11 +28,11 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
@@ -473,8 +473,41 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># These are the modules you will need</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># These are the modules you will need</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">climate</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.13</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">matplotlib</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">161</span>
+<span class="g g-Whitespace">    </span><span class="mi">157</span> <span class="kn">from</span><span class="w"> </span><span class="nn">packaging.version</span><span class="w"> </span><span class="kn">import</span> <span class="n">parse</span> <span class="k">as</span> <span class="n">parse_version</span>
+<span class="g g-Whitespace">    </span><span class="mi">159</span> <span class="c1"># cbook must import matplotlib only within function</span>
+<span class="g g-Whitespace">    </span><span class="mi">160</span> <span class="c1"># definitions, so it is safe to import from it here.</span>
+<span class="ne">--&gt; </span><span class="mi">161</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_api</span><span class="p">,</span> <span class="n">_version</span><span class="p">,</span> <span class="n">cbook</span><span class="p">,</span> <span class="n">_docstring</span><span class="p">,</span> <span class="n">rcsetup</span>
+<span class="g g-Whitespace">    </span><span class="mi">162</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib._api</span><span class="w"> </span><span class="kn">import</span> <span class="n">MatplotlibDeprecationWarning</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.rcsetup</span><span class="w"> </span><span class="kn">import</span> <span class="n">cycler</span>  <span class="c1"># noqa: F401</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">software</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">climate</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.13</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">matplotlib</span><span class="o">/</span><span class="n">rcsetup</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">33</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib._enums</span><span class="w"> </span><span class="kn">import</span> <span class="n">JoinStyle</span><span class="p">,</span> <span class="n">CapStyle</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span> <span class="c1"># Don&#39;t let the original cycler collide with our validating cycler</span>
+<span class="ne">---&gt; </span><span class="mi">33</span> <span class="kn">from</span><span class="w"> </span><span class="nn">cycler</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cycler</span><span class="p">,</span> <span class="n">cycler</span> <span class="k">as</span> <span class="n">ccycler</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span> <span class="nd">@_api</span><span class="o">.</span><span class="n">caching_module_getattr</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="k">class</span><span class="w"> </span><span class="nc">__getattr__</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span>     <span class="nd">@_api</span><span class="o">.</span><span class="n">deprecated</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span>         <span class="s2">&quot;3.9&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span>         <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;``matplotlib.backends.backend_registry.list_builtin&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span>             <span class="s2">&quot;(matplotlib.backends.BackendFilter.INTERACTIVE)``&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span>     <span class="nd">@property</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span>     <span class="k">def</span><span class="w"> </span><span class="nf">interactive_bk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;cycler&#39;
 </pre></div>
 </div>
 </div>
