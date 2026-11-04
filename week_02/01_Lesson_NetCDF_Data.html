@@ -54,22 +54,9 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-88391345-1"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'UA-88391345-1');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'UA-88391345-1');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -271,7 +258,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/pat-schmitt/climate_practicals_bsc/master?urlpath=lab/tree/book/week_02/01_Lesson_NetCDF_Data.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/Polarchristian1/climate_practicals_bsc/master?urlpath=lab/tree/book/week_02/01_Lesson_NetCDF_Data.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -302,7 +289,7 @@
       
       
       
-      <li><a href="https://github.com/pat-schmitt/climate_practicals_bsc" target="_blank"
+      <li><a href="https://github.com/Polarchristian1/climate_practicals_bsc" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -319,7 +306,7 @@
       
       
       
-      <li><a href="https://github.com/pat-schmitt/climate_practicals_bsc/edit/master/book/week_02/01_Lesson_NetCDF_Data.ipynb" target="_blank"
+      <li><a href="https://github.com/Polarchristian1/climate_practicals_bsc/edit/master/book/week_02/01_Lesson_NetCDF_Data.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -336,7 +323,7 @@
       
       
       
-      <li><a href="https://github.com/pat-schmitt/climate_practicals_bsc/issues/new?title=Issue%20on%20page%20%2Fweek_02/01_Lesson_NetCDF_Data.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Polarchristian1/climate_practicals_bsc/issues/new?title=Issue%20on%20page%20%2Fweek_02/01_Lesson_NetCDF_Data.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -497,7 +484,7 @@ document.write(`
 <p>Remember that for the assignments we will never ask you to use tools you didn’t use in a lesson before! <em>If this happens it was a mistake from our side, sorry!</em></p>
 <section id="netcdf-files">
 <h2>NetCDF Files<a class="headerlink" href="#netcdf-files" title="Link to this heading">#</a></h2>
-<p>In order to open and plot NetCDF files, you’ll need to install the <code class="docutils literal notranslate"><span class="pre">xarray</span></code> and <code class="docutils literal notranslate"><span class="pre">netcdf4</span></code> packages: if you haven’t done so already, follow the <a class="reference external" href="https://pat-schmitt.github.io/climate_practicals_bsc/getting_started.html">installation instructions</a>! To create nice map projections, you also need to install the <code class="docutils literal notranslate"><span class="pre">cartopy</span></code> package.</p>
+<p>In order to open and plot NetCDF files, you’ll need to install the <code class="docutils literal notranslate"><span class="pre">xarray</span></code> and <code class="docutils literal notranslate"><span class="pre">netcdf4</span></code> packages: if you haven’t done so already, follow the <a class="reference external" href="https://Polarchristian1.github.io/climate_practicals_bsc/getting_started.html">installation instructions</a>! To create nice map projections, you also need to install the <code class="docutils literal notranslate"><span class="pre">cartopy</span></code> package.</p>
 <section id="imports-and-options">
 <h3>Imports and options<a class="headerlink" href="#imports-and-options" title="Link to this heading">#</a></h3>
 <p>First, let’s import the tools we need. Remember why we need to import our tools? If not, ask us!</p>
@@ -582,7 +569,7 @@ document.write(`
 </div>
 <p>You’ll have to give an absolute or relative path to the file for this to work. For example <code class="docutils literal notranslate"><span class="pre">r'C:\PATH\TO\FILE\CERES_EBAF-TOA_Ed2.8_Avg-2001-2014.nc'</span></code> on windows.</p>
 <p><strong>!! Windows users !!: don’t forget to add the <code class="docutils literal notranslate"><span class="pre">r</span></code> before the path, which allows to use backlashes in the string.</strong></p>
-<p><strong>Note:</strong> you can also open files without downloading them via an url. This is somehow inefficient (it will download all data in memory each time you run the notebook), but might be useful e.g. on MyBinder where you can’t download things locally. See <a class="reference external" href="https://pat-schmitt.github.io/climate_practicals_bsc/download.html#reading-data-from-an-url">this instructions</a> if you are interested in doing that.</p>
+<p><strong>Note:</strong> you can also open files without downloading them via an url. This is somehow inefficient (it will download all data in memory each time you run the notebook), but might be useful e.g. on MyBinder where you can’t download things locally. See <a class="reference external" href="https://Polarchristian1.github.io/climate_practicals_bsc/download.html#reading-data-from-an-url">this instructions</a> if you are interested in doing that.</p>
 <p><strong>If you are getting an “HDF Error” related to NetCDF4 when reading the file, install the <code class="docutils literal notranslate"><span class="pre">h5netcdf</span></code> library (<code class="docutils literal notranslate"><span class="pre">mamba</span> <span class="pre">install</span> <span class="pre">h5netcdf</span></code>), restart your kernel, and open the file with:</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ds</span> <span class="pre">=</span> <span class="pre">xr.open_dataset(fpath,</span> <span class="pre">engine='h5netcdf')</span></code></p></li>
@@ -1394,7 +1381,7 @@ By Fabien Maussion, Lilian Schuster, Patrick Schmitt
 </a>
 These lecture notes and exercises are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0) license</a>.
 <br>
-&copy; Copyright 2018-2022.
+&copy; Copyright 2018-2026.
 </p>
 
 </div>
