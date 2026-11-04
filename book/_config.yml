@@ -7,12 +7,12 @@
 # Book settings
 title: Climate System - Practicals # The title of the book. Will be placed in the left navbar.
 author: Fabien Maussion, Lilian Schuster, Patrick Schmitt  # The author of the book
-copyright: "2018-2023"  # Copyright year to be placed in the footer
+copyright: "2018-2026"  # Copyright year to be placed in the footer
 logo: img/logo.png  # A path to the book logo
 parse:
   myst_extended_syntax: true
 repository:
-  url: https://github.com/pat-schmitt/climate_practicals_bsc
+  url: https://github.com/Polarchristian1/climate_practicals_bsc
   path_to_book: book 
   branch: master
 parse:
@@ -31,7 +31,7 @@ html:
   use_repository_button: true
   use_issues_button: true
   use_edit_page_button: true
-  google_analytics_id: UA-88391345-1
+  # google_analytics_id: (add GA4 ID here if desired)
   toc_title: "On this page"
   extra_footer: |
     <p>
@@ -40,7 +40,7 @@ html:
     </a>
     These lecture notes and exercises are licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International (CC BY 4.0) license</a>.
     <br>
-    &copy; Copyright 2018-2022.
+    &copy; Copyright 2018-2026.
     </p>
 sphinx:
   config:
